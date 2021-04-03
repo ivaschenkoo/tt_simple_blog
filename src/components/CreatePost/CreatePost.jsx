@@ -1,7 +1,8 @@
 import React from 'react';
 import {Field, Formik} from "formik";
 import * as yup from 'yup';
-import {Redirect} from "react-router-dom";
+import {NavLink, Redirect} from "react-router-dom";
+import styles from "../PostPage/PostPage.module.css";
 
 
 const CreatePost = (props) => {
@@ -14,6 +15,7 @@ const CreatePost = (props) => {
 
     return (
         <div>
+            <NavLink to='/' className={styles.link}>Back</NavLink>
             <h1>Create new post</h1>
             <Formik
                 initialValues={{

@@ -1,10 +1,10 @@
 import React from "react";
 import {compose} from "redux";
-import {withRouter} from "react-router-dom";
+import {withRouter, Redirect} from "react-router-dom";
 import {connect} from "react-redux";
 import PostPage from "./PostPage";
 import Comment from "../Comment/Comment";
-import {createComment} from "../../redux/PostReducer";
+import {createComment, deletePost} from "../../redux/PostReducer";
 
 
 const PostPageContainer = (props) => {
@@ -14,13 +14,14 @@ const PostPageContainer = (props) => {
         ?.map(el => <Comment key={el.id} text={el.body}/>)
 
     if (!post) {
-        return <div>404</div>
+        return <Redirect to='/' />
     }
 
     return <PostPage postId={postId}
                      title={post.title}
                      body={post.body}
                      comments={comments}
+                     deletePost={props.deletePost}
                      createComment={props.createComment}/>
 }
 
@@ -31,5 +32,5 @@ let mapStateToProps = (state) => ({
 
 export default compose(
     withRouter,
-    connect(mapStateToProps, {createComment})
+    connect(mapStateToProps, {createComment, deletePost})
 )(PostPageContainer)

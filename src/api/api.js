@@ -14,7 +14,9 @@ export const PostAPI = {
     createPost(data) {
         return instance.post('/posts', data).then(response => response.data)
     },
-
+    deletePost(postId) {
+        return instance.delete(`/posts/${postId}`).then(response => response.data)
+    }
 }
 
 export const CommentAPI = {

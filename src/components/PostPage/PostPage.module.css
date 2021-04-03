@@ -1,3 +1,9 @@
+.toolWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .link {
     position: relative;
     color: black;
@@ -9,6 +15,28 @@
     content: '<';
     position: absolute;
     left: -14px;
+}
+
+.button {
+    position: relative;
+    padding: 0.5em;
+    margin-left: 0.5em;
+
+    color: black;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+
+    background: none;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+}
+
+.button:hover {
+    color: white;
+    background: black;
+    transition: ease-in-out 0.5s;
 }
 
 .wrapper {
