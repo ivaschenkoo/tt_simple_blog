@@ -1,0 +1,31 @@
+.link {
+    position: relative;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.link::before {
+    content: '<';
+    position: absolute;
+    left: -14px;
+}
+
+.wrapper {
+    margin-bottom: 2em;
+}
+
+.commentTitle {
+    padding: 1em 0;
+    font-size: 1em;
+    text-transform: uppercase;
+
+    border-bottom: 2px solid black;
+}
+
+.commentsList {
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+}
