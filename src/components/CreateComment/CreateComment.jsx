@@ -18,11 +18,12 @@ const CreateComment = (props) => {
                 }}
                 validateOnBlur
                 validationSchema={validation}
-                onSubmit={(values) => {
+                onSubmit={(values, {resetForm}) => {
                     props.createComment({
                         "postId": props.postId,
                         "body": values.body,
                     })
+                    resetForm()
                 }}
             >
                 {(formikProps) => (

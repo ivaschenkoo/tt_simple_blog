@@ -4,7 +4,7 @@ import {withRouter, Redirect} from "react-router-dom";
 import {connect} from "react-redux";
 import PostPage from "./PostPage";
 import Comment from "../Comment/Comment";
-import {createComment, deletePost} from "../../redux/PostReducer";
+import {createComment, deletePost, editPost} from "../../redux/PostReducer";
 
 
 const PostPageContainer = (props) => {
@@ -22,6 +22,7 @@ const PostPageContainer = (props) => {
                      body={post.body}
                      comments={comments}
                      deletePost={props.deletePost}
+                     editPost={props.editPost}
                      createComment={props.createComment}/>
 }
 
@@ -32,5 +33,5 @@ let mapStateToProps = (state) => ({
 
 export default compose(
     withRouter,
-    connect(mapStateToProps, {createComment, deletePost})
+    connect(mapStateToProps, {createComment, deletePost, editPost})
 )(PostPageContainer)

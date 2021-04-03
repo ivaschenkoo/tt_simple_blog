@@ -1,0 +1,45 @@
+.title,
+.text {
+    padding: 0.75em;
+    margin: 1em 0;
+
+    border: 1px solid black;
+    border-radius: 2em;
+    outline: none;
+}
+
+.text {
+    min-height: 50px;
+    max-height: 150px;
+    resize: vertical;
+}
+
+.errorMessage {
+    align-self: start;
+    margin: 0 0 0.75em;
+    padding: 0;
+
+    color: red;
+    font-weight: bold;
+}
+
+.button {
+    padding: 1em;
+    max-width: 200px;
+    align-self: center;
+
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    background: black;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+}
+
+.button:hover {
+    color: black;
+    background: white;
+    transition: ease-in-out 0.5s;
+}

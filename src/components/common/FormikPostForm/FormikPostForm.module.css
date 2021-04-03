@@ -1,0 +1,69 @@
+.title,
+.text {
+    width: 100%;
+    padding: 0.75em;
+    margin-bottom: 0.25em;
+
+    border: 1px solid black;
+    border-radius: 2em;
+    outline: none;
+}
+
+.link {
+    position: absolute;
+    opacity: 0;
+    top: -40px;
+    margin: 0 0 1em;
+    padding: 1em;
+
+    color: white;
+
+    background-color: forestgreen;
+    border-radius: 2em;
+    transition: ease-in-out 0.5s;
+    overflow: hidden;
+}
+
+.link a {
+    color: white;
+}
+
+.linkActive {
+    top: 70px;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.text {
+    min-height: 50px;
+    max-height: 150px;
+    resize: vertical;
+}
+
+.errorMessage {
+    align-self: start;
+    margin: 0 0 0.75em;
+    padding: 0;
+
+    color: red;
+    font-weight: bold;
+}
+
+.button {
+    padding: 1em;
+
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    background: none;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+}
+
+.button:hover {
+    color: white;
+    background: black;
+    transition: ease-in-out 0.5s;
+}
