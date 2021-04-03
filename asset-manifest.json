@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/tt_simple_blog/static/css/main.98c6d316.chunk.css",
+    "main.js": "/tt_simple_blog/static/js/main.31317e4a.chunk.js",
+    "main.js.map": "/tt_simple_blog/static/js/main.31317e4a.chunk.js.map",
+    "runtime-main.js": "/tt_simple_blog/static/js/runtime-main.e8211dfb.js",
+    "runtime-main.js.map": "/tt_simple_blog/static/js/runtime-main.e8211dfb.js.map",
+    "static/js/2.89a41ff9.chunk.js": "/tt_simple_blog/static/js/2.89a41ff9.chunk.js",
+    "static/js/2.89a41ff9.chunk.js.map": "/tt_simple_blog/static/js/2.89a41ff9.chunk.js.map",
+    "static/js/3.89923d19.chunk.js": "/tt_simple_blog/static/js/3.89923d19.chunk.js",
+    "static/js/3.89923d19.chunk.js.map": "/tt_simple_blog/static/js/3.89923d19.chunk.js.map",
+    "index.html": "/tt_simple_blog/index.html",
+    "static/css/main.98c6d316.chunk.css.map": "/tt_simple_blog/static/css/main.98c6d316.chunk.css.map",
+    "static/js/2.89a41ff9.chunk.js.LICENSE.txt": "/tt_simple_blog/static/js/2.89a41ff9.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e8211dfb.js",
+    "static/js/2.89a41ff9.chunk.js",
+    "static/css/main.98c6d316.chunk.css",
+    "static/js/main.31317e4a.chunk.js"
+  ]
+}
