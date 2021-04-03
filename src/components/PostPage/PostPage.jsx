@@ -33,11 +33,13 @@ const PostPage = (props) => {
                 <h1>{props.title}</h1>
                 <p>{props.body}</p>
             </div>
-            <p className={styles.commentTitle}>Comments</p>
-            <CreateComment postId={props.postId} createComment={props.createComment}/>
-            <ul className={styles.commentsList}>
-                {props.comments}
-            </ul>
+            <div className={styles.wrapper}>
+                <p className={styles.commentTitle}>Comments</p>
+                <CreateComment postId={props.postId} createComment={props.createComment}/>
+                <ul className={styles.commentsList}>
+                    {props.comments}
+                </ul>
+            </div>
         </div>
     )
 }

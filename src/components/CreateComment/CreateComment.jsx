@@ -1,6 +1,7 @@
 import React from "react";
 import {Field, Formik} from 'formik';
 import * as yup from "yup";
+import styles from './CreateComment.module.css'
 
 
 const CreateComment = (props) => {
@@ -10,7 +11,7 @@ const CreateComment = (props) => {
     })
 
     return (
-        <div>
+        <div className={styles.wrapper} >
             <Formik
                 initialValues={{
                     body: '',
@@ -25,15 +26,18 @@ const CreateComment = (props) => {
                 }}
             >
                 {(formikProps) => (
-                    <div>
-                        <Field name="body" as="textarea"/>
-                        {formikProps.touched.body && formikProps.errors.body && <p>{formikProps.errors.body}</p>}
+                    <>
+                        <Field name="body" as="textarea" className={styles.text} />
+                        {formikProps.touched.body && (formikProps.errors.body
+                            && <p className={styles.errorMessage}>{formikProps.errors.body}</p>)}
                         <button type='submit'
                                 onClick={formikProps.handleSubmit}
-                                disabled={!formikProps.isValid && !formikProps.dirty}>
+                                disabled={!formikProps.isValid && !formikProps.dirty}
+                                className={styles.button}
+                        >
                             Send comment
                         </button>
-                    </div>
+                    </>
                 )}
             </Formik>
         </div>

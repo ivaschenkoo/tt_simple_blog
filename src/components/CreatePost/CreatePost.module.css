@@ -1,6 +1,6 @@
-.toolWrapper {
+.wrapper {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -17,15 +17,38 @@
     left: -14px;
 }
 
+.title,
+.text {
+    width: 100%;
+    padding: 0.75em;
+    margin-bottom: 0.25em;
+
+    border: 1px solid black;
+    border-radius: 2em;
+    outline: none;
+}
+
+.text {
+    min-height: 50px;
+    max-height: 150px;
+    resize: vertical;
+}
+
+.errorMessage {
+    align-self: start;
+    margin: 0 0 0.75em;
+    padding: 0;
+
+    color: red;
+    font-weight: bold;
+}
+
 .button {
-    position: relative;
-    padding: 0.5em;
-    margin-left: 0.5em;
+    padding: 1em;
 
     color: black;
-    font-size: 1em;
-    font-weight: bold;
     text-decoration: none;
+    text-transform: uppercase;
 
     background: none;
     border: 1px solid black;
@@ -37,25 +60,4 @@
     color: white;
     background: black;
     transition: ease-in-out 0.5s;
-}
-
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 2em;
-}
-
-.commentTitle {
-    padding: 1em 0;
-    font-size: 1em;
-    text-transform: uppercase;
-
-    border-bottom: 2px solid black;
-}
-
-.commentsList {
-    margin: 0;
-    padding: 0;
-
-    list-style-type: none;
 }
