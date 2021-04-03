@@ -63,3 +63,19 @@
     background: white;
     box-shadow: 0 30px 50px 0 rgb(1 1 1 / 15%);;
 }
+
+@media (min-width: 420px) and (max-width: 1240px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 419px){
+    .container {
+        width: 320px;
+    }
+
+    .mainWrapper .container {
+        padding: 1em 2em;
+    }
+}

@@ -46,7 +46,7 @@ const FormikEditForm = (props) => {
                             disabled={!formikProps.isValid && !formikProps.dirty}
                             className={styles.button}
                     >
-                        UpdatePost
+                        Update Post
                     </button>
                 </>
             )}

@@ -14,7 +14,7 @@ const Post = (props) => {
                 </NavLink>
                 <p className={styles.description}>{body}</p>
             </span>
-            <span className={styles.firstLetter}>{props.title[0].toUpperCase()}</span>
+            <span className={styles.firstLetter}>{props.title[0]?.toUpperCase()}</span>
         </li>
     )
 }
